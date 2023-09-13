@@ -7,11 +7,11 @@ const person = {
 // Create a reference to the players array
 const team = players;
 
-// Create a shallow copy of the players array
-const team1 = [...players];
+// Create a shallow copy of the players array using slice()
+const team1 = players.slice();
 
-// Create a shallow copy of the person object
-const cap1 = { ...person };
+// Create a shallow copy of the person object using Object.assign()
+const cap1 = Object.assign({}, person);
 
 // Test the variables
 console.log("team:", team);
